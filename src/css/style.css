@@ -303,7 +303,7 @@ header .scroll-indicator p {
   width: 90%;
   padding: 30px 0;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #262626;
   border-radius: 8px;
   -webkit-transition: 300ms;
   transition: 300ms;
@@ -345,7 +345,7 @@ header .scroll-indicator p {
 
 #mobile-nav li a {
   width: 100%;
-  color: #121212;
+  color: #ffffff;
   -webkit-transition: 300ms;
   transition: 300ms;
   font-weight: 600;
