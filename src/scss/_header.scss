@@ -134,18 +134,22 @@ header {
 
   .scroll-indicator {
     position: absolute;
-    bottom: 30px;
+    bottom: 40px;
     right: 50%;
     transform: translateX(50%);
-
     text-align: center;
 
+    @include breakpoint(lg) {
+      bottom: 10px;
+    }
+
     img {
-      width: 20px;
+      width: 18px;
       margin-bottom: 16px;
     }
     p {
-      font-size: 0.875rem;
+      font-size: 12px;
+      margin: 0;
     }
   }
 }
