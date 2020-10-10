@@ -15,18 +15,6 @@ main {
       }
     }
 
-    h2 {
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 50px;
-      font-size: 1.625rem;
-
-      @include breakpoint(md) {
-        font-size: 2.375rem;
-        margin-bottom: 100px;
-      }
-    }
-
     // home page part
     .part {
       text-align: center;
@@ -54,14 +42,7 @@ main {
         @include breakpoint(md) {
           margin-top: 28px;
         }
-        h3 {
-          font-size: 1.5rem;
-          font-weight: 700;
 
-          @include breakpoint(md) {
-            font-size: 2rem;
-          }
-        }
         hr {
           width: 60px;
           height: 4px;
@@ -72,6 +53,60 @@ main {
         p {
           font-weight: 1.125rem;
         }
+      }
+    }
+
+    &#hp2 {
+      text-align: center;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      @include breakpoint(lg) {
+        text-align: left;
+      }
+
+      .row {
+        &:nth-child(odd) {
+          .center {
+            padding-right: 15px;
+
+            @include breakpoint(lg) {
+              padding-right: 70px;
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          .center {
+            padding-left: 15px;
+
+            @include breakpoint(lg) {
+              padding-left: 70px;
+            }
+          }
+        }
+      }
+
+      img {
+        width: 80%;
+
+        @include breakpoint(sm) {
+          width: 300px;
+        }
+        @include breakpoint(md) {
+          width: 400px;
+        }
+        @include breakpoint(lg) {
+          width: 100%;
+        }
+        @include breakpoint(xl) {
+          width: 500px;
+        }
+      }
+      .center {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
       }
     }
   }

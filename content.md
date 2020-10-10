@@ -1,28 +1,5 @@
 <!-- HOME PAGE -->
 
-WHY CHOOSE US ?
-
-Competent Team
-
-At WeNeedDev there are many teams who are competent
-in their respective fields and have experience, and have
-completed more than 100+ projects. We always improve our
-performance skills so that we don't fall behind the times
-
-Best Performance
-
-all the projects we work on are in accordance
-with good standards, and have good performance and
-regular maintenance. every project we work on has gone
-through very careful planning
-
-Fast Response
-
-We serve your requests quickly for 1x24 hours, because
-we have many teams who can handle your project,
-and handle your project on time according
-to the initial request.
-
 What are you waiting for ?
 
 CONTACT US
