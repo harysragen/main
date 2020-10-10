@@ -26,16 +26,18 @@ body {
 .btn {
   display: inline-block;
   color: white !important;
-  padding: 12px 60px;
+  padding: 8px 50px;
   border-radius: 50px;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
   background-attachment: fixed;
+  font-size: 0.75rem;
 }
 
 @media (min-width: 992px) {
   .btn {
     padding: 18px 66px;
+    font-size: 1rem;
   }
 }
 
@@ -197,8 +199,8 @@ header .hero .row {
 
 header .hero .row h1 {
   font-size: 1.875rem;
-  letter-spacing: 10px;
-  word-spacing: -6px;
+  letter-spacing: 6px;
+  word-spacing: normal;
   font-weight: 400;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
@@ -217,6 +219,8 @@ header .hero .row h1 {
 
 @media (min-width: 992px) {
   header .hero .row h1 {
+    letter-spacing: 10px;
+    word-spacing: -6px;
     font-size: 2.25rem;
   }
 }
@@ -406,8 +410,24 @@ main section .part {
   }
 }
 
+main section .part__image img {
+  width: 130px;
+}
+
+@media (min-width: 768px) {
+  main section .part__image img {
+    width: 160px;
+  }
+}
+
 main section .part__text {
-  margin-top: 28px;
+  margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+  main section .part__text {
+    margin-top: 28px;
+  }
 }
 
 main section .part__text h3 {

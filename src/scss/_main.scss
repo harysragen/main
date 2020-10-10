@@ -40,9 +40,20 @@ main {
       @include breakpoint(xl) {
         padding: 0 26px;
       }
+      &__image {
+        img {
+          width: 130px;
+          @include breakpoint(md) {
+            width: 160px;
+          }
+        }
+      }
 
       &__text {
-        margin-top: 28px;
+        margin-top: 24px;
+        @include breakpoint(md) {
+          margin-top: 28px;
+        }
         h3 {
           font-size: 1.5rem;
           font-weight: 700;
