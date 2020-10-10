@@ -239,7 +239,7 @@ header .hero .row .btn {
 
 header .scroll-indicator {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   right: 50%;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
@@ -254,7 +254,13 @@ header .scroll-indicator {
 
 header .scroll-indicator img {
   width: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  header .scroll-indicator img {
+    margin-bottom: 16px;
+  }
 }
 
 header .scroll-indicator p {
