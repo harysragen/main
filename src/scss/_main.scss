@@ -207,6 +207,14 @@ main {
         }
       }
 
+      .sosmed {
+        margin-top: 60px;
+
+        @include breakpoint(lg) {
+          margin-top: 0;
+        }
+      }
+
       .social-media {
         float: right;
         text-align: right;
@@ -221,7 +229,11 @@ main {
         }
 
         td {
-          padding-bottom: 50px;
+          padding-bottom: 20px;
+
+          @include breakpoint(lg) {
+            padding-bottom: 50px;
+          }
         }
       }
     }

@@ -685,6 +685,16 @@ main section.contactus a:last-child i {
   margin-left: 36px;
 }
 
+main section.contactus .sosmed {
+  margin-top: 60px;
+}
+
+@media (min-width: 992px) {
+  main section.contactus .sosmed {
+    margin-top: 0;
+  }
+}
+
 main section.contactus .social-media {
   float: right;
   text-align: right;
@@ -700,7 +710,13 @@ main section.contactus .social-media i {
 }
 
 main section.contactus .social-media td {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  main section.contactus .social-media td {
+    padding-bottom: 50px;
+  }
 }
 
 .map iframe {
