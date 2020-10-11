@@ -1,15 +1,5 @@
 <!-- HOME PAGE -->
 
-What are you waiting for ?
-
-CONTACT US
-
-or
-
-Find out more About Us
-
-copyright © 2020 - weneeddev
-
 <!-- ABOUT US PAGE -->
 
 HOME

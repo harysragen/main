@@ -6,7 +6,6 @@
 body {
   background-color: #121212;
   position: relative;
-  height: 9999px;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +29,6 @@ body {
   border-radius: 50px;
   -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
-  background-attachment: fixed;
   font-size: 0.75rem;
 }
 
@@ -455,13 +453,21 @@ main section .part__text p {
 
 main section#hp2 {
   text-align: center;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 @media (min-width: 992px) {
   main section#hp2 {
     text-align: left;
+  }
+}
+
+main section#hp2 .row p {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  main section#hp2 .row p {
+    margin-bottom: 0;
   }
 }
 
@@ -524,5 +530,137 @@ main section#hp2 .center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main section.action-banner {
+  background-color: #262626;
+  text-align: center;
+}
+
+main section.action-banner h2 {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 992px) {
+  main section.action-banner h2 {
+    margin-bottom: 50px;
+  }
+}
+
+main section.action-banner span {
+  color: #bdbdbd;
+  display: block;
+  margin: 16px 0;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 992px) {
+  main section.action-banner span {
+    margin: 24px 0;
+    font-size: 1rem;
+  }
+}
+
+main section.action-banner p {
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  main section.action-banner p {
+    font-size: 1.125rem;
+  }
+}
+
+main section.action-banner p a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 50px 0;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  footer {
+    text-align: left;
+    padding: 100px 0;
+  }
+}
+
+footer img {
+  width: 60%;
+}
+
+@media (min-width: 576px) {
+  footer img {
+    width: 320px;
+  }
+}
+
+footer p {
+  margin: 8px 0 32px;
+}
+
+@media (min-width: 992px) {
+  footer p {
+    margin: 8px 0 0;
+  }
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  footer ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+footer ul li {
+  margin-left: 0;
+}
+
+footer ul li:first-child {
+  margin-left: 0;
+}
+
+@media (min-width: 992px) {
+  footer ul li {
+    margin-left: 60px;
+  }
+}
+
+footer ul li a {
+  color: #ffffff;
+  font-size: 1.6rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+@media (min-width: 768px) {
+  footer ul li a {
+    font-size: 2rem;
+  }
+}
+
+footer ul li a:hover {
+  color: #ff7a00;
 }
 /*# sourceMappingURL=style.css.map */

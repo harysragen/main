@@ -58,14 +58,21 @@ main {
 
     &#hp2 {
       text-align: center;
-      padding-left: 16px;
-      padding-right: 16px;
+      // padding-left: 16px;
+      // padding-right: 16px;
 
       @include breakpoint(lg) {
         text-align: left;
       }
 
       .row {
+        p {
+          margin-bottom: 50px;
+          @include breakpoint(lg) {
+            margin-bottom: 0;
+          }
+        }
+
         &:nth-child(odd) {
           .center {
             padding-right: 15px;
@@ -107,6 +114,45 @@ main {
         display: flex !important;
         flex-direction: column;
         justify-content: center;
+      }
+    }
+
+    // action banner
+    &.action-banner {
+      background-color: $secondary;
+      text-align: center;
+      h2 {
+        margin-bottom: 32px;
+        @include breakpoint(lg) {
+          margin-bottom: 50px;
+        }
+      }
+
+      span {
+        color: $gray;
+        display: block;
+        margin: 16px 0;
+        font-size: 0.875rem;
+
+        @include breakpoint(lg) {
+          margin: 24px 0;
+          font-size: 1rem;
+        }
+      }
+
+      p {
+        color: white;
+        margin: 0;
+        font-size: 1rem;
+
+        @include breakpoint(lg) {
+          font-size: 1.125rem;
+        }
+
+        a {
+          color: white;
+          text-decoration: underline;
+        }
       }
     }
   }

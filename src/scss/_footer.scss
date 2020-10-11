@@ -1,0 +1,62 @@
+footer {
+  padding: 50px 0;
+  text-align: center;
+
+  @include breakpoint(lg) {
+    text-align: left;
+    padding: 100px 0;
+  }
+
+  img {
+    width: 60%;
+    @include breakpoint(sm) {
+      width: 320px;
+    }
+  }
+
+  p {
+    margin: 8px 0 32px;
+
+    @include breakpoint(lg) {
+      margin: 8px 0 0;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+
+    @include breakpoint(lg) {
+      justify-content: flex-end;
+    }
+
+    li {
+      margin-left: 0;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @include breakpoint(lg) {
+        margin-left: 60px;
+      }
+      a {
+        color: $white;
+        font-size: 1.6rem;
+        transition: 300ms;
+
+        @include breakpoint(md) {
+          font-size: 2rem;
+        }
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
