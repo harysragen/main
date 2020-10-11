@@ -57,6 +57,19 @@ body.freeze {
   background-image: linear-gradient(to right, #ff0404, #a71212);
 }
 
+form .btn {
+  border-radius: 8px;
+  width: 48%;
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  form .btn {
+    padding: 12px 66px;
+    font-size: 1rem;
+  }
+}
+
 h2 {
   font-weight: 700;
   text-align: center;
@@ -106,12 +119,23 @@ header {
   height: 100vh;
   color: #ffffff;
   background-color: #121212;
-  background-image: url(/src/assets/hero-image-home.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
+}
+
+header.home {
+  background-image: url(/src/assets/hero-image-home.png);
+}
+
+header.aboutus {
+  background-image: url(/src/assets/hero-image-aboutus.png);
+}
+
+header.contactus {
+  background-image: url(/src/assets/hero-image-contactus.png);
 }
 
 header::after {
@@ -262,6 +286,18 @@ header .hero h1 {
   }
 }
 
+header .hero p {
+  font-size: 16px;
+  letter-spacing: normal;
+}
+
+@media (min-width: 768px) {
+  header .hero p {
+    letter-spacing: 6px;
+    font-size: 26px;
+  }
+}
+
 header .hero .btn {
   margin-top: 32px;
 }
@@ -405,7 +441,7 @@ main section:first-child {
 
 @media (min-width: 992px) {
   main section:first-child {
-    padding: 200px 0;
+    padding: 200px 0 100px;
   }
 }
 
@@ -528,7 +564,7 @@ main section#hp2 img {
   }
 }
 
-main section#hp2 .center {
+main section .center {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -585,6 +621,97 @@ main section.action-banner p {
 main section.action-banner p a {
   color: white;
   text-decoration: underline;
+}
+
+main section.aboutus {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  main section.aboutus {
+    text-align: left;
+  }
+}
+
+main section.aboutus img {
+  width: 300px !important;
+  margin: 20px 0;
+}
+
+@media (min-width: 992px) {
+  main section.aboutus img {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+main section.aboutus h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  main section.aboutus h2 {
+    text-align: left;
+  }
+}
+
+main section.contactus h2 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  main section.contactus h2 {
+    text-align: left;
+  }
+}
+
+main section.contactus form input {
+  display: block;
+  padding: 10px 20px;
+}
+
+main section.contactus form .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.contactus a:last-child i {
+  margin-left: 36px;
+}
+
+main section.contactus .social-media {
+  float: right;
+  text-align: right;
+  color: #ffffff;
+  font-size: 1.375rem;
+  text-align: right;
+  font-weight: 400;
+}
+
+main section.contactus .social-media i {
+  font-size: 2rem;
+  margin-left: 30px;
+}
+
+main section.contactus .social-media td {
+  padding-bottom: 50px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 992px) {
+  .map iframe {
+    height: 500px;
+  }
 }
 
 footer {

@@ -50,6 +50,19 @@ body {
   }
 }
 
+form {
+  .btn {
+    border-radius: 8px;
+    width: 48%;
+    font-weight: 700;
+
+    @include breakpoint(lg) {
+      padding: 12px 66px;
+      font-size: 1rem;
+    }
+  }
+}
+
 h2 {
   font-weight: 700;
   text-align: center;

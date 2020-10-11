@@ -18,12 +18,15 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <!-- Css -->
     <link rel="stylesheet" href="/src/css/style.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>WeNeedDev</title>
   </head>
   <body>
 
     <!-- ====== HEADER ====== -->
-    <header>
+    <header class="home">
       <nav class="fixed-top">
         <div class="container">
           <a class="navbar-brand" href="/">
@@ -37,10 +40,10 @@
               <a class="nav-link" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT US</a>
+              <a class="nav-link" href="/src/pages/aboutus.html">ABOUT US</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT US</a>
+              <a class="nav-link" href="/src/pages/contactus.html">CONTACT US</a>
             </li>
           </ul>
         </div>
@@ -49,8 +52,8 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h1>IMPROVE YOUR DIGITAL NEEDS WITH US..</h1>
-              <a href="#" class="btn btn-yellow">CONTACT US</a>
+              <h1 data-aos="zoom-in" data-aos-duration="1500">IMPROVE YOUR DIGITAL NEEDS WITH US..</h1>
+              <a href="/src/pages/contactus.html" class="btn btn-yellow" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">CONTACT US</a>
             </div>
           </div>
         </div>
@@ -71,10 +74,10 @@
         <a class="nav-link" href="#">HOME</a>
       </li>
       <li>
-        <a class="nav-link" href="#">ABOUT US</a>
+        <a class="nav-link" href="/src/pages/aboutus.html">ABOUT US</a>
       </li>
       <li>
-        <a class="nav-link" href="#">CONTACT US</a>
+        <a class="nav-link" href="/src/pages/contactus.html">CONTACT US</a>
       </li>
     </ul>
     <div id="blur"></div>
@@ -92,7 +95,7 @@
 
           <div class="row">
             <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-              <div class="part">
+              <div class="part" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="0">
                 <div class="part__image">
                   <img src="/src/assets/web-dev.svg" alt="web development">
                 </div>
@@ -108,7 +111,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-              <div class="part">
+              <div class="part" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                 <div class="part__image">
                   <img src="/src/assets/mobile-dev.svg" alt="mobile development">
                 </div>
@@ -124,7 +127,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-10 col-md-8 col-lg-4">
-              <div class="part">
+              <div class="part" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
                 <div class="part__image">
                   <img src="/src/assets/game-dev.svg" alt="game development">
                 </div>
@@ -156,10 +159,10 @@
           </div>
 
           <div class="row">
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
               <img src="/src/assets/competent-team.svg" alt="Competent Team">
             </div>
-            <div class="col-12 col-lg-5 center">
+            <div class="col-12 col-lg-5 center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0">
               <h3>Competent Team</h3>
               <p>
                 At WeNeedDev there are many teams who are competent
@@ -171,10 +174,10 @@
           </div>
 
           <div class="row">
-            <div class="col-12 col-lg-5 order-1 order-lg-2">
+            <div class="col-12 col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
               <img src="/src/assets/best-performance.svg" alt="Competent Team">
             </div>
-            <div class="col-12 col-lg-5 order-2 order-lg-1 center">
+            <div class="col-12 col-lg-5 order-2 order-lg-1 center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
               <h3>Best Performance</h3>
               <p>
                 all the projects we work on are in accordance
@@ -186,10 +189,10 @@
           </div>
 
           <div class="row">
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-5" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
               <img src="/src/assets/fast-response.svg" alt="Competent Team">
             </div>
-            <div class="col-12 col-lg-5 center">
+            <div class="col-12 col-lg-5 center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
               <h3>Fast Response</h3>
               <p>
                 We serve your requests quickly for 1x24 hours, because
@@ -210,9 +213,9 @@
           <div class="row">
             <div class="col-12">
               <h2>What are you waiting for ?</h2>
-              <a href="#" class="btn btn-yellow">CONTACT US</a>
+              <a href="/src/pages/contactus.html" class="btn btn-yellow">CONTACT US</a>
               <span>or</span>
-              <p>Find out more <a href="#">About Us</a></p>
+              <p>Find out more <a href="/src/pages/aboutus.html">About Us</a></p>
             </div>
           </div>
         </div>
@@ -261,6 +264,7 @@
 
 
     <!-- Optional JavaScript -->
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

@@ -2,12 +2,21 @@ header {
   height: 100vh;
   color: $white;
   background-color: $primary;
-  background-image: url(/src/assets/hero-image-home.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
+
+  &.home {
+    background-image: url(/src/assets/hero-image-home.png);
+  }
+  &.aboutus {
+    background-image: url(/src/assets/hero-image-aboutus.png);
+  }
+  &.contactus {
+    background-image: url(/src/assets/hero-image-contactus.png);
+  }
 
   &::after {
     content: "";
@@ -118,6 +127,16 @@ header {
       }
       @include breakpoint(xl) {
         font-size: 3.625rem;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      letter-spacing: normal;
+
+      @include breakpoint(md) {
+        letter-spacing: 6px;
+        font-size: 26px;
       }
     }
 

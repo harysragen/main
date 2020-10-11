@@ -1,3 +1,6 @@
+// AOS
+  AOS.init();
+
 const mobileNav = document.getElementById("mobile-nav");
 const blur = document.getElementById("blur");
 
