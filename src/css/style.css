@@ -699,9 +699,15 @@ main section.contactus .social-media {
   float: right;
   text-align: right;
   color: #ffffff;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   text-align: right;
   font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  main section.contactus .social-media {
+    font-size: 1.375rem;
+  }
 }
 
 main section.contactus .social-media i {
