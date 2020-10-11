@@ -10,10 +10,11 @@ html {
 body {
   background-color: #121212;
   position: relative;
+  overflow-x: hidden;
 }
 
 body.freeze {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
